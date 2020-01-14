@@ -49,7 +49,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang='scss'>
 * {
   padding: 0;
   margin: 0;
@@ -57,4 +57,5 @@ export default {
 body{
   padding-top: 2.5rem;
 }
+
 </style>

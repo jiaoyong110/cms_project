@@ -105,11 +105,17 @@ export default {
   },
   methods: {
       getIndexData(){
-          axios.get('/api/appData').then(function(response){
-              console.log(response)
-          }).catch(function(error){
-              console.log(error)
-          } )
+        //   第1种方式
+        //   axios.get('/api/appData').then(function(response){
+        //       console.log(response)
+        //   }).catch(function(error){
+        //       console.log(error)
+        //   } )
+        // 第2种方式
+        axios.get("/api/index.json").then(res => {
+            console.log(res)
+            // this.recommendData = res.data.recommendData
+        })
       }
   }
 };
